@@ -1,66 +1,48 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>reveal.js</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css">
+    <!-- Printing and PDF exports -->
+    <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-background-size="contain" data-background-image='./imgs/cover.jpg'>
+            </section>
+            <section data-background-size="contain" data-background-image='./imgs/page1.jpg'>
+                <div style="position:absolute; top:450px;">
+                    <span style="font-size:30px;font-family:courier; background-color:rgba(255, 255, 255, 0.5); color:black;">
+                        Once there was a leaf named Lucky. He loved his life in his tree with his family and friends.
+                    </span>
+                </div>
+            </section>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section data-background-size="contain"data-background-image='./imgs/cover.jpg'>
-					
-				
-					
-				</section>
-
-
-				<section data-background-size="contain" data-background-image='./imgs/page1.jpg'>
-					
-
-					<div style="position:absolute; top:450px;">
-					<span style="font-size:30px;font-family:courier; background-color:rgba(255, 255, 255, 0.5); color:black;">
-
-					Once there was a leaf named Lucky. He loved his life in his tree with his family and friends.
-
-				</span>
-				</div>
-
-
-
-
-				</section>
 
 
 				<section data-background-size="contain"data-background-image='./imgs/page2.jpg'>
-
-<!-- THIS IS THE BEGINNING OF FONT STUFF
- -->			<div style="position:absolute; top:450px;">
+		<div style="position:absolute; top:450px;">
 		<span style="font-size:30px;font-family:courier; background-color:rgba(255, 255, 255, 0.5); color:black;">
 
 			One day, a HUGE gust of wind hit the tree and Lucky fell out!
 
 	</span>
 				</div>
-<!-- 				THIS IS THE END OF FONT STUFF
- -->					
 
 
 </section>
@@ -81,7 +63,6 @@
 
 
 </section>
-					
 
 <section data-background-size="contain"data-background-image='./imgs/page4.jpg'>
 <div style="position:absolute; top:450px;">
@@ -99,7 +80,7 @@ To make himself feel better, Lucky decided to explore the city. First, he went t
 <span style="font-size:30px;font-family:courier; background-color:rgba(255, 255, 255, 0.5); color:black;"> Next he went to Time Square to see the lights and people.</span>
 </div>
 </section>
-					
+
 <section data-background-size="contain"data-background-image='./imgs/page6.jpg'>
 <div style="position:absolute; top:450px;">
 <span style="font-size:30px;font-family:courier; background-color:rgba(255, 255, 255, 0.5); color:black;">Then he went to the subway to roam around the city.</span>
@@ -107,7 +88,7 @@ To make himself feel better, Lucky decided to explore the city. First, he went t
 
 </div>
 </section>
-					
+
 <section data-background-size="contain"data-background-image='./imgs/page7.jpg'>
 	
 <div style="position:absolute; top:450px;">
@@ -117,7 +98,6 @@ To make himself feel better, Lucky decided to explore the city. First, he went t
 </span>
 </div>
 </section>
-
 
 <section data-background-size="contain"data-background-image='./imgs/page8.jpg'>
 <div style="position:absolute; top:450px;">
@@ -137,28 +117,23 @@ When Lucky went to the park, he met some new friends name Timmy and Lucy. Timmy 
 </div>
 </section>
 
-					
-					
-					
-		
-		</div>
-	</div>
+        </div>
+    </div>
+    <script src="js/reveal.js"></script>
+    <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        hash: true,
+        dependencies: [
+            { src: 'plugin/markdown/marked.js' },
+            { src: 'plugin/markdown/markdown.js' },
+            { src: 'plugin/highlight/highlight.js' },
+            { src: 'plugin/notes/notes.js', async: true }
+        ]
+    });
+    </script>
+</body>
 
-		<script src="js/reveal.js"></script>
-
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				hash: true,
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/highlight/highlight.js' },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-		</script>
-	</body>
 </html>
